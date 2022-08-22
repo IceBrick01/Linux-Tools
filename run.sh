@@ -11,7 +11,7 @@ fi
 
 echo "============= IceBrick's Linux Tool ===============
 (1) Install NodeJS v16       (2) Coming soon
-(0) 
+(0) leave
 ==============================================="
 
 read -r -p "[-] Please type the command number: " cmd;

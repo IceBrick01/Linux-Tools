@@ -14,19 +14,19 @@ echo "============= IceBrick's Linux Tool ===============
 (0) leave
 ==============================================="
 
-read -r -p "[-] Please type the command number: " cmd;
+read -r -p "[-] Please type the command number: " cmdnum;
 
-if [ "$cmd" ] && [ "$cmd" -gt 0 ] && [ "$cmd" -lt 2 ]; then
+if [ "$cmdnum" ] && [ "$cmdnum" -gt 0 ] && [ "$cmdnum" -lt 2 ]; then
    echo "==============================================="
-   echo "[-] Runnning($cmd)..."
+   echo "[-] Runnning($cmdnum)..."
    echo "==============================================="
 fi
 
-if [ "$cmd" == 1 ]
+if [ "$cmdnum" == 1 ]
 then
   curl -s https://deb.nodesource.com/setup_16.x | sudo bash
   sudo apt install nodejs -y
-elif [ "$cmd" == 2 ]
+elif [ "$cmdnum" == 2 ]
 then
    echo "==============================================="
    echo "[-] Coming soon!"

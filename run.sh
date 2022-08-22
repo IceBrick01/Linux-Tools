@@ -5,9 +5,13 @@ Red_Error() {
   printf '\033[1;31;40m%b\033[0m\n' "$@"
 }
 
-echo "============= IceBrick's Linux Tool ==============="
-echo "(1) Install NodeJS v16       (2) Coming soon"
-echo "(0) exit"
+if [ $(whoami) != "root" ]; then
+  Red_Error "[x] Please use root to run this script!"
+fi
+
+echo "============= IceBrick's Linux Tool ===============
+(1) Install NodeJS v16       (2) Coming soon"
+(0) exit
 echo "==============================================="
 
 read -r -p "[-] Please type the command number: " cmd;

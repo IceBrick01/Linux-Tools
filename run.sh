@@ -3,6 +3,7 @@ printf "\033c"
 
 Red_Error() {
   printf '\033[1;31;40m%b\033[0m\n' "$@"
+  exit 0
 }
 
 if [ $(whoami) != "root" ]; then
